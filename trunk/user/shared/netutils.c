@@ -260,7 +260,7 @@ get_man_ifname(int unit)
 	char tmp[32], prefix[16];
 
 	snprintf(prefix, sizeof(prefix), "wan%d_", unit);
-	return nvram_safe_get(strcat_r(prefix, "ifname", tmp));
+	return "bond0";
 }
 
 int
